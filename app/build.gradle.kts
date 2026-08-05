@@ -32,7 +32,6 @@ android {
         targetCompatibility = JavaVersion.VERSION_11
     }
 }
-
 dependencies {
     implementation(libs.activity.ktx)
     implementation(libs.appcompat)
@@ -41,4 +40,5 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.espresso.core)
     androidTestImplementation(libs.ext.junit)
+    implementation("com.github.bumptech.glide:glide:5.0.5")
 }
