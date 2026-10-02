@@ -20,15 +20,18 @@
         app:layout_constraintEnd_toEndOf="parent"
         />
 
-    <!-- MENU INFERIOR FIXO DA ACTIVITY -->
+    <!-- MENU INFERIOR FIXO DA ACTIVITY (Docked Normal Menu) -->
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#0F172A"
+        android:background="@drawable/bg_bottom_nav"
+        android:elevation="8dp"
         app:menu="@menu/menu"
-        app:itemIconTint="#00F5FF"
-        app:itemTextColor="#00F5FF"
+        app:itemIconTint="@null"
+        app:itemTextColor="@color/nav_item_color"
+        app:itemRippleColor="@color/cyan_glow_20"
+        app:itemActiveIndicatorStyle="@null"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />

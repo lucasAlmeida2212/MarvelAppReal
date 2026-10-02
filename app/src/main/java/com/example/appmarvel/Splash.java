@@ -1,37 +1,66 @@
 package com.example.appmarvel;
 
 import android.content.Intent;
-import android.net.Uri;
+import android.media.MediaPlayer;
 import android.os.Bundle;
-import android.widget.VideoView;
+import android.os.Handler;
+import android.util.Log;
+import android.view.WindowManager;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 public class Splash extends AppCompatActivity {
+
+    private static final long SPLASH_DURATION_MS = 9000L; // 9 segundos conforme solicitado
+    private MediaPlayer mediaPlayer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
         setContentView(R.layout.activity_splash);
 
-        VideoView video = findViewById(R.id.splashVideoView);
-        String videoPath = "android.resource://" + getPackageName() + "/" + R.raw.animacaoreal;
-        Uri uri = Uri.parse(videoPath);
-        video.setVideoURI(uri);
+        getWindow().setFlags(
+                WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN
+        );
 
-        // Quando o vídeo terminar, navega para a MainActivity
-        video.setOnCompletionListener(mp -> {
-            Intent intent = new Intent(Splash.this, MainActivity.class);
-            startActivity(intent);
-            finish();
-        });
+        // Reproduzir o áudio jarvis_intro_1 da pasta res/raw
+        try {
+            mediaPlayer = MediaPlayer.create(this, R.raw.jarvis_intro_1);
+            mediaPlayer.start();
+        } catch (Exception e) {
+            Log.e("Splash", "Erro ao reproduzir áudio", e);
+        }
 
-        // Inicia o vídeo
-        video.start();
+        // Timer de 12 segundos para ir para a MainActivity e encerrar o áudio
+        new Handler().postDelayed(this::navigateToMain, SPLASH_DURATION_MS);
+    }
+
+    private void navigateToMain() {
+        if (mediaPlayer != null) {
+            try {
+                if (mediaPlayer.isPlaying()) {
+                    mediaPlayer.stop();
+                }
+                mediaPlayer.release();
+            } catch (Exception ignored) {}
+            mediaPlayer = null;
+        }
+        startActivity(new Intent(Splash.this, MainActivity.class));
+        finish();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        if (mediaPlayer != null) {
+            try {
+                if (mediaPlayer.isPlaying()) {
+                    mediaPlayer.stop();
+                }
+                mediaPlayer.release();
+            } catch (Exception ignored) {}
+            mediaPlayer = null;
+        }
     }
 }

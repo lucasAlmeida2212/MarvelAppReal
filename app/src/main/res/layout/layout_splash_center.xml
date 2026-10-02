@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false">
+
+    <TextView
+        android:id="@+id/marvelGlow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="J.A.R.V.I.S"
+        android:textColor="#00F0FF"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-black"
+        android:letterSpacing="0.08"
+        android:alpha="0.18" />
+
+    <TextView
+        android:id="@+id/marvelLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="J.A.R.V.I.S"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-black"
+        android:letterSpacing="0.08"
+        android:shadowColor="#00F0FF"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="12" />
+
+    <TextView
+        android:id="@+id/marvelSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_marginTop="82dp"
+        android:text="PERSONAL ASSISTANT CORE"
+        android:textColor="#A8F8FF"
+        android:textSize="9sp"
+        android:fontFamily="monospace"
+        android:letterSpacing="0.28"
+        android:alpha="0.0" />
+
+</FrameLayout>

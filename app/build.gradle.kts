@@ -43,4 +43,14 @@ dependencies {
     androidTestImplementation(libs.espresso.core)
     androidTestImplementation(libs.ext.junit)
     implementation("com.github.bumptech.glide:glide:5.0.5")
+
+    compileOnly("org.projectlombok:lombok:1.18.32")
+    annotationProcessor ("org.projectlombok:lombok:1.18.32")
+    implementation ("com.google.code.gson:gson:2.10.1")
+
+    // Retrofit
+    implementation("com.squareup.retrofit2:retrofit:2.11.0")
+    // Conversor Gson (para converter JSON automaticamente em Objetos)
+    implementation("com.squareup.retrofit2:converter-gson:2.11.0")
+
 }

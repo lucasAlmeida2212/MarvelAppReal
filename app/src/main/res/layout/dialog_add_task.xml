@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#0F172A"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:backgroundTint="#0F172A">
+
+    <!-- Header Row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="12dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TASK INITIALIZATION"
+                android:textColor="#7DF4FF"
+                android:textSize="10sp"
+                android:letterSpacing="0.18"
+                android:fontFamily="sans-serif-medium"
+                android:layout_marginBottom="2dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Mission"
+                android:textColor="#DCE1FF"
+                android:textSize="22sp"
+                android:fontFamily="sans-serif-medium"/>
+        </LinearLayout>
+
+        <!-- ID Badge & Close Button -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ID: 0x-A42"
+                android:textColor="#94A3B8"
+                android:textSize="10sp"
+                android:paddingHorizontal="8dp"
+                android:paddingVertical="4dp"
+                android:background="@drawable/bg_chip_hud"
+                android:layout_marginEnd="12dp"/>
+
+            <ImageView
+                android:id="@+id/btnCloseDialog"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_search"
+                android:padding="6dp"
+                android:background="@drawable/bg_chip_hud"
+                android:contentDescription="Close"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/hud_divider"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Task Title Input -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MISSION_TITLE"
+        android:textColor="#94A3B8"
+        android:textSize="10sp"
+        android:letterSpacing="0.15"
+        android:layout_marginBottom="6dp"/>
+
+    <EditText
+        android:id="@+id/etMissionTitle"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/bg_chip_hud"
+        android:hint="Enter mission objective..."
+        android:textColorHint="#475569"
+        android:textColor="#DCE1FF"
+        android:textSize="14sp"
+        android:paddingHorizontal="12dp"
+        android:layout_marginBottom="16dp"
+        android:inputType="text"/>
+
+    <!-- Core Sector -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CORE SECTOR"
+        android:textColor="#94A3B8"
+        android:textSize="10sp"
+        android:letterSpacing="0.15"
+        android:layout_marginBottom="8dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:id="@+id/chipHealth"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:text="HEALTH"
+            android:textColor="#00F0FF"
+            android:textSize="11sp"
+            android:gravity="center"
+            android:background="@drawable/bg_bottom_nav_item_selected"
+            android:layout_marginEnd="6dp"/>
+
+        <TextView
+            android:id="@+id/chipWork"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:text="WORK"
+            android:textColor="#94A3B8"
+            android:textSize="11sp"
+            android:gravity="center"
+            android:background="@drawable/bg_chip_hud"
+            android:layout_marginEnd="6dp"/>
+
+        <TextView
+            android:id="@+id/chipPersonal"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:text="PERSONAL"
+            android:textColor="#94A3B8"
+            android:textSize="11sp"
+            android:gravity="center"
+            android:background="@drawable/bg_chip_hud"/>
+    </LinearLayout>
+
+    <!-- Time & Date Picker Row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp"
+        android:baselineAligned="false">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginEnd="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TIME (HORÁRIO)"
+                android:textColor="#94A3B8"
+                android:textSize="10sp"
+                android:letterSpacing="0.15"
+                android:layout_marginBottom="6dp"/>
+
+            <TextView
+                android:id="@+id/tvSelectTime"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="12:00"
+                android:textColor="#00F0FF"
+                android:textSize="13sp"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="12dp"
+                android:background="@drawable/bg_chip_hud"
+                android:fontFamily="sans-serif-medium"
+                android:clickable="true"
+                android:focusable="true"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginStart="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DATE (DATA)"
+                android:textColor="#94A3B8"
+                android:textSize="10sp"
+                android:letterSpacing="0.15"
+                android:layout_marginBottom="6dp"/>
+
+            <TextView
+                android:id="@+id/tvSelectDate"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="2026.09.28"
+                android:textColor="#00F0FF"
+                android:textSize="13sp"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="12dp"
+                android:background="@drawable/bg_chip_hud"
+                android:fontFamily="sans-serif-medium"
+                android:clickable="true"
+                android:focusable="true"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Priority Level -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PRIORITY_LEVEL"
+        android:textColor="#94A3B8"
+        android:textSize="10sp"
+        android:letterSpacing="0.15"
+        android:layout_marginBottom="8dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="24dp">
+
+        <TextView
+            android:id="@+id/priorityLow"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:text="LOW"
+            android:textColor="#94A3B8"
+            android:textSize="11sp"
+            android:gravity="center"
+            android:background="@drawable/bg_chip_hud"
+            android:layout_marginEnd="6dp"/>
+
+        <TextView
+            android:id="@+id/priorityMedium"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:text="MEDIUM"
+            android:textColor="#00F0FF"
+            android:textSize="11sp"
+            android:gravity="center"
+            android:background="@drawable/bg_bottom_nav_item_selected"
+            android:layout_marginEnd="6dp"/>
+
+        <TextView
+            android:id="@+id/priorityHigh"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:text="HIGH"
+            android:textColor="#94A3B8"
+            android:textSize="11sp"
+            android:gravity="center"
+            android:background="@drawable/bg_chip_hud"/>
+    </LinearLayout>
+
+    <!-- Action Buttons -->
+    <Button
+        android:id="@+id/btnInitiateTask"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="INITIATE TASK"
+        android:textColor="#00363A"
+        android:textSize="13sp"
+        android:fontFamily="sans-serif-medium"
+        android:letterSpacing="0.15"
+        android:backgroundTint="#00F0FF"
+        android:layout_marginBottom="10dp"
+        app:cornerRadius="6dp"/>
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="CANCEL"
+        android:textColor="#DCE1FF"
+        android:textSize="13sp"
+        android:fontFamily="sans-serif-medium"
+        android:letterSpacing="0.15"
+        android:backgroundTint="#181E36"
+        app:strokeColor="#3300F0FF"
+        app:strokeWidth="1dp"
+        app:cornerRadius="6dp"/>
+
+</LinearLayout>

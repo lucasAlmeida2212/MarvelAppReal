@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/topLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="28dp"
+        android:text="JARVIS // SYSTEM"
+        android:textColor="#72F6FF"
+        android:textSize="9sp"
+        android:fontFamily="monospace"
+        android:letterSpacing="0.14"
+        android:alpha="0.0" />
+
+    <TextView
+        android:id="@+id/topRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|end"
+        android:layout_marginEnd="18dp"
+        android:layout_marginTop="28dp"
+        android:text="ONLINE"
+        android:textColor="#72F6FF"
+        android:textSize="9sp"
+        android:fontFamily="monospace"
+        android:letterSpacing="0.14"
+        android:alpha="0.0" />
+
+    <TextView
+        android:id="@+id/bottomLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|start"
+        android:layout_marginStart="18dp"
+        android:layout_marginBottom="24dp"
+        android:text="DATA SYNC: ACTIVE"
+        android:textColor="#72F6FF"
+        android:textSize="8sp"
+        android:fontFamily="monospace"
+        android:letterSpacing="0.12"
+        android:alpha="0.0" />
+
+    <TextView
+        android:id="@+id/bottomRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="24dp"
+        android:text="STATUS: OPTIMAL"
+        android:textColor="#72F6FF"
+        android:textSize="8sp"
+        android:fontFamily="monospace"
+        android:letterSpacing="0.12"
+        android:alpha="0.0" />
+
+</FrameLayout>

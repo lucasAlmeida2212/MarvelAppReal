@@ -1,6 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <color name="splash_bg">#02050E</color>
+    <color name="splash_cyan">#00F0FF</color>
+    <color name="splash_cyan_soft">#72F6FF</color>
+    <color name="splash_white">#FFFFFF</color>
 
+    <!-- Backgrounds & Surfaces (Glacier Kinetic Palette) -->
+    <color name="bg_main">#02050E</color>
+    <color name="bg_surface_dark">#040B1A</color>
+    <color name="bg_card">#081226</color>
+    <color name="bg_card_alt">#0A162E</color>
+    <color name="bg_card_border">#1A2B47</color>
+    <color name="bg_progress_track">#0F1F35</color>
+
+    <!-- Text Colors -->
+    <color name="text_primary">#E1E8F0</color>
+    <color name="text_secondary">#94A3B8</color>
+    <color name="text_muted">#475569</color>
+    <color name="text_label">#64748B</color>
+
+    <!-- Neon Accents -->
+    <color name="cyan_accent">#00D2E0</color>
+    <color name="cyan_bright">#00F0FF</color>
+    <color name="cyan_glow_5">#0D00F0FF</color>
+    <color name="cyan_glow_10">#1A00F0FF</color>
+    <color name="cyan_glow_20">#3300F0FF</color>
+    <color name="cyan_glow_50">#8000F0FF</color>
+
+    <!-- System States -->
+    <color name="status_active">#00F0FF</color>
+    <color name="status_warning">#FFD700</color>
+    <color name="status_critical">#FF3131</color>
+    <color name="blue_accent">#3B82F6</color>
+    <color name="white_overlay_5">#0DFFFFFF</color>
 </resources>

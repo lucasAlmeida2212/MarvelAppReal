@@ -10,4 +10,14 @@
         android:name="com.example.appmarvel.CharacterInfo"
         android:label="fragment_character_info"
         tools:layout="@layout/fragment_character_info" />
+
+    <fragment
+        android:id="@+id/tasksFragment"
+        android:name="com.example.appmarvel.TasksFragment"
+        android:label="Tasks Module" />
+
+    <fragment
+        android:id="@+id/jarvisFragment"
+        android:name="com.example.appmarvel.JarvisFragment"
+        android:label="JARVIS Core" />
 </navigation>

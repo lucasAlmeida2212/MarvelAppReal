@@ -1,5 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">AppMarvel</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="splash_app_name">MARVEL</string>
+    <string name="splash_initializing">INITIALIZING...</string>
+    <string name="app_name">Stitch Jarvis</string>
+    <string name="title_database_scan">DATABASE SCAN</string>
+    <string name="search_placeholder">SEARCH SUBJECT...</string>
+    <string name="default_search_query">STEVE ROGERS</string>
+
+    <!-- Identity Summary -->
+    <string name="subject_name">STEVE ROGERS</string>
+    <string name="subject_id">SUBJECT ID: CAP-001</string>
+    <string name="label_status">STATUS:</string>
+    <string name="label_origin">ORIGIN:</string>
+    <string name="label_rank">RANK:</string>
+    <string name="value_status_active">ACTIVE</string>
+    <string name="value_origin">BROOKLYN, NY</string>
+    <string name="value_rank">CAPTAIN</string>
+
+    <!-- Physical Attributes -->
+    <string name="title_physical_attributes">ATRIBUTOS FÍSICOS</string>
+    <string name="attr_strength">FORÇA</string>
+    <string name="attr_agility">AGILIDADE</string>
+
+    <!-- Cognitive Attributes -->
+    <string name="title_cognitive_attributes">ATRIBUTOS COGNITIVOS</string>
+    <string name="attr_intelligence">INTELIGÊNCIA</string>
+    <string name="attr_leadership">LIDERANÇA</string>
+
+    <!-- Archive -->
+    <string name="title_archive">ARQUIVO DO INDIVÍDUO</string>
+    <string name="section_affiliations">AFILIAÇÕES</string>
+    <string name="chip_avengers">Vingadores</string>
+    <string name="chip_shield">S.H.I.E.L.D.</string>
+    <string name="chip_army">U.S. Army</string>
+    <string name="section_powers">PODERES CONHECIDOS</string>
+    <string name="power_1">• Soro do Super Soldado</string>
+    <string name="power_2">• Envelhecimento Retardado</string>
+    <string name="power_3">• Mestre em Táticas de Combate</string>
+    <string name="section_missions">HISTÓRICO DE MISSÕES</string>
+
+    <!-- Missions Data -->
+    <string name="mission_1_year">2012</string>
+    <string name="mission_1_title">Batalha de Nova York</string>
+    <string name="mission_1_desc">Liderança de campo contra invasão Chitauri.</string>
+    <string name="mission_2_year">2014</string>
+    <string name="mission_2_title">Operação Insight</string>
+    <string name="mission_2_desc">Desmantelamento da infraestrutura infiltrada da HYDRA.</string>
+
+    <!-- Bottom Navigation -->
+    <string name="nav_overview">OVERVIEW</string>
+    <string name="nav_tech">TECH</string>
+    <string name="nav_media">MEDIA</string>
+    <string name="nav_log">LOG</string>
 </resources>

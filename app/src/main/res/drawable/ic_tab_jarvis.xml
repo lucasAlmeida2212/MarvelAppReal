@@ -1,0 +1,19 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <!-- Concentric core circle 1 -->
+    <path
+        android:fillColor="#1A00F0FF"
+        android:strokeColor="#00F0FF"
+        android:strokeWidth="1.5"
+        android:pathData="M12,12m-4,0a4,4 0,1 1,8 0a4,4 0,1 1,-8 0"/>
+    <!-- Concentric outer broken interface ring -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#00F0FF"
+        android:strokeWidth="1.0"
+        android:strokeLineCap="round"
+        android:pathData="M12,3a9,9 0,0 1,8.5 6M3.5,15a9,9 0,0 1,0 -6M12,21a9,9 0,0 1,-8.5 -6M20.5,9a9,9 0,0 1,0 6"/>
+</vector>

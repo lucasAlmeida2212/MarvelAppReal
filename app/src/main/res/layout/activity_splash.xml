@@ -1,13 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@android:color/black">
-
-    <VideoView
-        android:id="@+id/splashVideoView"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/splashRoot" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@drawable/splash_background">
+    <!-- O nome deve ser o caminho completo da classe -->
+    <com.example.appmarvel.MarvelSplashView
+        android:id="@+id/splashEffects"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_centerInParent="true" />
-
-</RelativeLayout>
+        android:layout_height="match_parent"/>
+    <include android:id="@+id/splashHud" layout="@layout/layout_splash_hud"/>
+    <include android:id="@+id/splashCenter" layout="@layout/layout_splash_center"/>
+    <include android:id="@+id/splashLoading" layout="@layout/layout_splash_loading"/>
+    <View android:id="@+id/splashVignette" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@drawable/splash_vignette" android:clickable="false" android:focusable="false"/>
+    <View android:id="@+id/splashScanline" android:layout_width="match_parent" android:layout_height="90dp" android:layout_gravity="top" android:background="@drawable/splash_scanline" android:alpha="0.10"/>
+</FrameLayout>
